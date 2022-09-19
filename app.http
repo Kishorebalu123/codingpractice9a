@@ -1,0 +1,28 @@
+###
+post http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "kishorebalu123",
+  "name": "kishore",
+  "password":"balu_1",
+  "gender": "male",
+  "location": "Eluru"
+}
+###
+post http://localhost:3000/login
+Content-Type: application/json
+
+{
+  "username": "kishorebalu123",
+  "password": "balu_1"
+}
+###
+put http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+  "username": "kishorebalu123",
+  "oldPassword": "balu_2",
+  "newPassword": "re_1"
+}
